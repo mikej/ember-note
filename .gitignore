@@ -17,6 +17,6 @@ npm-debug.log
 testem.log
 
 # datastore used in development
-users
-notebooks
-notes
+/users
+/notebooks
+/notes
