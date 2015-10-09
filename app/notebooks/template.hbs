@@ -7,9 +7,11 @@
     <div>
       <ul>
         {{#each model as |notebook|}}
-          {{#link-to 'notebooks.notes' notebook.id}}
-            <li>{{notebook.title}}</li>
-          {{/link-to}}
+          <li>
+            {{#link-to 'notebooks.notes' notebook.id}}
+              {{notebook.title}}
+            {{/link-to}}
+          </li>
         {{else}}
           <div>No notebooks found</div>
         {{/each}}
